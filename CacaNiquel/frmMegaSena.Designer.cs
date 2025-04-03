@@ -28,36 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.brSortearNumeros = new System.Windows.Forms.Button();
+            this.lblNumeros = new System.Windows.Forms.Label();
+            this.btSortearNumeros = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtQuantidadeCartoes = new System.Windows.Forms.TextBox();
+            this.lstNumCartoes = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNumeros
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(42, 75);
-            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(504, 78);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblNumeros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblNumeros.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeros.ForeColor = System.Drawing.Color.White;
+            this.lblNumeros.Location = new System.Drawing.Point(42, 75);
+            this.lblNumeros.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.lblNumeros.Name = "lblNumeros";
+            this.lblNumeros.Size = new System.Drawing.Size(504, 52);
+            this.lblNumeros.TabIndex = 0;
             // 
-            // brSortearNumeros
+            // btSortearNumeros
             // 
-            this.brSortearNumeros.Location = new System.Drawing.Point(224, 254);
-            this.brSortearNumeros.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.brSortearNumeros.Name = "brSortearNumeros";
-            this.brSortearNumeros.Size = new System.Drawing.Size(133, 87);
-            this.brSortearNumeros.TabIndex = 1;
-            this.brSortearNumeros.Text = "Sortear Números";
-            this.brSortearNumeros.UseVisualStyleBackColor = true;
-            this.brSortearNumeros.Click += new System.EventHandler(this.brSortearNumeros_Click);
+            this.btSortearNumeros.Location = new System.Drawing.Point(214, 518);
+            this.btSortearNumeros.Margin = new System.Windows.Forms.Padding(7);
+            this.btSortearNumeros.Name = "btSortearNumeros";
+            this.btSortearNumeros.Size = new System.Drawing.Size(133, 87);
+            this.btSortearNumeros.TabIndex = 1;
+            this.btSortearNumeros.Text = "Sortear Números";
+            this.btSortearNumeros.UseVisualStyleBackColor = true;
+            this.btSortearNumeros.Click += new System.EventHandler(this.btSortearNumeros_Click);
             // 
             // label2
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(42, 25);
             this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
@@ -73,18 +74,29 @@
             this.txtQuantidadeCartoes.Size = new System.Drawing.Size(219, 35);
             this.txtQuantidadeCartoes.TabIndex = 3;
             // 
+            // lstNumCartoes
+            // 
+            this.lstNumCartoes.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstNumCartoes.FormattingEnabled = true;
+            this.lstNumCartoes.ItemHeight = 28;
+            this.lstNumCartoes.Location = new System.Drawing.Point(42, 164);
+            this.lstNumCartoes.Name = "lstNumCartoes";
+            this.lstNumCartoes.Size = new System.Drawing.Size(504, 312);
+            this.lstNumCartoes.TabIndex = 4;
+            // 
             // frmMegaSena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(593, 386);
+            this.ClientSize = new System.Drawing.Size(593, 638);
+            this.Controls.Add(this.lstNumCartoes);
             this.Controls.Add(this.txtQuantidadeCartoes);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.brSortearNumeros);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btSortearNumeros);
+            this.Controls.Add(this.lblNumeros);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "frmMegaSena";
             this.Text = "Mega Sena";
             this.ResumeLayout(false);
@@ -94,9 +106,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button brSortearNumeros;
+        private System.Windows.Forms.Label lblNumeros;
+        private System.Windows.Forms.Button btSortearNumeros;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtQuantidadeCartoes;
+        private System.Windows.Forms.ListBox lstNumCartoes;
     }
 }

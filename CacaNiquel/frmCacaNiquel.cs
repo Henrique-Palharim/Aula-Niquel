@@ -21,12 +21,20 @@ namespace CacaNiquel
     public partial class frmCacaNiquel : Form
     {
 
+        /*
+            
+            Henrique - 09
+            CTI - Informática II Noturno
+
+        */
+
+
         /* -------------------- VARIÁVEIS GLOBAIS -------------------- */
 
         private Random sorteio = new Random();
         private int niquel1, niquel2, niquel3;
         private int contaGiro = 0, contaNiquel = 1;
-
+        
         private string niquel1s, niquel2s, niquel3s;
         private string[] emoji = new string[]
         {
